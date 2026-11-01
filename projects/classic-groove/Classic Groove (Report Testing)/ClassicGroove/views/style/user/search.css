@@ -1,0 +1,90 @@
+#search {
+  display: flex;
+  background-color: var(--whi);
+  align-items: center;
+  /* padding: 0 15px; */
+  font-family: "Dosis", sans-serif;
+}
+#search .search-container,
+#search .drop-menu-container,
+#search .price-container {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+}
+#search .search-container {
+  width: 50%;
+}
+#search .search,
+#search .drop-menu,
+#search .price {
+  height: 4vh;
+  width: 90%;
+  background-color: var(--gr2);
+  border-radius: 25px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+}
+
+#search input,
+#search select {
+  height: 100%;
+  width: 95%;
+  font-size: 15px;
+  background-color: var(--gr2);
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  padding-left: 10px;
+  font-family: "Dosis", sans-serif;
+}
+#search .price {
+  display: flex;
+  justify-content: space-around;
+}
+#search .price-container {
+  height: 4vh;
+  column-gap: 10px;
+}
+#search .price-container .price-begin,
+#search .price-container .price-end {
+  display: flex;
+  align-items: center;
+  background-color: var(--gr2);
+  border-radius: 25px;
+  padding-left: 10px;
+}
+#search .price input {
+  width: 70%;
+  padding: 0;
+}
+#search i {
+  color: var(--gr1);
+}
+
+/* #search .tooltip {
+  position: relative;
+  display: inline-block;
+} */
+
+#search .tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: var(--gr2);
+  color: var(--bla);
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 140%;
+  left: 50%;
+  margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+}
+
+#search .tooltip:hover .tooltiptext {
+  visibility: visible;
+}

@@ -1,0 +1,203 @@
+{
+  "date": "2026-11-01",
+  "workspace": ".",
+  "moves": [
+    {
+      "from": "N9_LaHieuPhong_Assignment1.docx",
+      "to": "assignments/assignment-01-manual-testing/reports/N9_LaHieuPhong_Assignment1.docx",
+      "reason": "Báo cáo chính Assignment 1 của La Hiểu Phong về manual testing OpenCart"
+    },
+    {
+      "from": "N9_LaHieuPhong_Assignment1.pdf",
+      "to": "assignments/assignment-01-manual-testing/reports/N9_LaHieuPhong_Assignment1.pdf",
+      "reason": "Bản PDF báo cáo Assignment 1"
+    },
+    {
+      "from": "Document1.docx",
+      "to": "assignments/assignment-01-manual-testing/drafts/Document1.docx",
+      "reason": "Bản tiếng Việt thiết kế test case và báo lỗi OpenCart của Phong trước bản báo cáo chính"
+    },
+    {
+      "from": "N9_Nguyễn Long Vũ_Assignment1",
+      "to": "assignments/assignment-01-manual-testing/team-members/N9_Nguyễn Long Vũ_Assignment1",
+      "reason": "Test execution và bug report XLSX của Nguyễn Long Vũ trong nhóm N9"
+    },
+    {
+      "from": "N9_LaHieuPhong_Assignment2.pdf",
+      "to": "assignments/assignment-02-selenium/reports/N9_LaHieuPhong_Assignment2.pdf",
+      "reason": "Báo cáo automated testing OpenCart bằng Selenium"
+    },
+    {
+      "from": "co_Hanh_ne.docx",
+      "to": "assignments/assignment-02-selenium/reports/co_Hanh_ne.docx",
+      "reason": "Bản Word báo cáo Assignment 2 của La Hiểu Phong"
+    },
+    {
+      "from": "N9",
+      "to": "assignments/assignment-02-selenium/source-versions/N9",
+      "reason": "Phiên bản mã nguồn Assignment 2; có khác biệt nội dung nên giữ riêng toàn bộ project"
+    },
+    {
+      "from": "N9_LaHieuPhong_Assignment2",
+      "to": "assignments/assignment-02-selenium/source-versions/N9_LaHieuPhong_Assignment2",
+      "reason": "Phiên bản mã nguồn Assignment 2; có khác biệt nội dung nên giữ riêng toàn bộ project"
+    },
+    {
+      "from": "N9_LaHieuPhong_Assignment2-main",
+      "to": "assignments/assignment-02-selenium/source-versions/N9_LaHieuPhong_Assignment2-main",
+      "reason": "Phiên bản mã nguồn Assignment 2; có khác biệt nội dung nên giữ riêng toàn bộ project"
+    },
+    {
+      "from": "BlackBoxTestingOpenCartDemo_LaHieuPhong",
+      "to": "projects/opencart/black-box/BlackBoxTestingOpenCartDemo_LaHieuPhong",
+      "reason": "Bộ Selenium/Pytest OpenCart của Phong và bản mở rộng; giữ riêng từng phiên bản"
+    },
+    {
+      "from": "La_Hieu_Phong",
+      "to": "projects/opencart/black-box/La_Hieu_Phong",
+      "reason": "Bộ Selenium/Pytest OpenCart của Phong và bản mở rộng; giữ riêng từng phiên bản"
+    },
+    {
+      "from": "WhiteBoxTestingOpenCartDemo_LaHieuPhong",
+      "to": "projects/opencart/white-box/WhiteBoxTestingOpenCartDemo_LaHieuPhong",
+      "reason": "Bộ PHPUnit và Selenium PHP cho OpenCart"
+    },
+    {
+      "from": "lahieuphong-selenium_opencart_automation",
+      "to": "projects/opencart/selenium-prototype/lahieuphong-selenium_opencart_automation",
+      "reason": "Prototype Selenium OpenCart với cấu hình trình duyệt và profile"
+    },
+    {
+      "from": "Project Details.docx",
+      "to": "projects/opencart/documents/Project Details.docx",
+      "reason": "Đề cương phạm vi và công cụ kiểm thử OpenCart"
+    },
+    {
+      "from": "Colorful abstract pitch deck.pptx",
+      "to": "projects/opencart/presentation-drafts/Colorful abstract pitch deck.pptx",
+      "reason": "Slide đồ án OpenCart nhóm Phong, Vũ, Quân, Nguyên; còn nội dung mẫu nên xếp bản nháp"
+    },
+    {
+      "from": "BlackBox_ClassicGroove_LaHieuPhong",
+      "to": "projects/classic-groove/black-box/BlackBox_ClassicGroove_LaHieuPhong",
+      "reason": "Bộ Selenium/Pytest Classic Groove độc lập có khác biệt so với bản trong gói tổng hợp"
+    },
+    {
+      "from": "Classic Groove (Report Testing)",
+      "to": "projects/classic-groove/Classic Groove (Report Testing)",
+      "reason": "Gói tổng hợp ứng dụng PHP, black-box và white-box; giữ nguyên ba Git repository bên trong"
+    },
+    {
+      "from": "tuần 3",
+      "to": "practice/weekly/week-03",
+      "reason": "Python và unit test cho Electricity, Login, Shopping"
+    },
+    {
+      "from": "tuần 4",
+      "to": "practice/weekly/week-04",
+      "reason": "Java, Maven và JUnit cho BankAccount, MathUtils, MathQuizGame"
+    },
+    {
+      "from": "tuần 6",
+      "to": "practice/weekly/week-06",
+      "reason": "Hiện chỉ có metadata Finder, chưa có bài làm"
+    },
+    {
+      "from": "HỌC PYTHON SELENIUM",
+      "to": "practice/selenium/learning/HỌC PYTHON SELENIUM",
+      "reason": "Bài học Selenium: mở trình duyệt, SGU/Google login, YouTube, VnExpress"
+    },
+    {
+      "from": "selenium",
+      "to": "practice/selenium/saucedemo/selenium",
+      "reason": "Thực hành Selenium trên SauceDemo: login, cart, checkout, session"
+    },
+    {
+      "from": "Testcase",
+      "to": "practice/selenium/saucedemo/Testcase",
+      "reason": "Thực hành login/logout tách helper trên SauceDemo"
+    },
+    {
+      "from": "selenium 2",
+      "to": "practice/selenium/tree-shop/selenium 2",
+      "reason": "Thực hành Tree Shop: tìm kiếm, chọn sản phẩm và tính subtotal"
+    },
+    {
+      "from": "test_treeshop.py",
+      "to": "practice/selenium/tree-shop/test_treeshop.py",
+      "reason": "Bộ test Tree Shop tổng hợp"
+    },
+    {
+      "from": "playtictactoe",
+      "to": "practice/selenium/tic-tac-toe/playtictactoe",
+      "reason": "Kiểm thử trò chơi tic-tac-toe và thuật toán minimax"
+    },
+    {
+      "from": "BlackBoxTesting-OpenCart-main",
+      "to": "references/opencart/black-box/BlackBoxTesting-OpenCart-main",
+      "reason": "Bộ mẫu black-box OpenCart từ Bug03 được ghi trong README"
+    },
+    {
+      "from": "Opencart_Repo_For_PHP_Unit_Testing-main",
+      "to": "references/opencart/php-unit-testing/Opencart_Repo_For_PHP_Unit_Testing-main",
+      "reason": "Bản tham khảo PHP unit testing hiện chỉ có README và metadata; giữ cả hai bản"
+    },
+    {
+      "from": "Opencart_Repo_For_PHP_Unit_Testing-main 2",
+      "to": "references/opencart/php-unit-testing/Opencart_Repo_For_PHP_Unit_Testing-main 2",
+      "reason": "Bản tham khảo PHP unit testing hiện chỉ có README và metadata; giữ cả hai bản"
+    },
+    {
+      "from": "opencart-4.0.2.3",
+      "to": "references/opencart/version-4.0.2.3/opencart-4.0.2.3",
+      "reason": "Tài liệu phát hành và schema OpenCart 4.0.2.3; thư mục hiện không có upload hoặc mã ứng dụng"
+    },
+    {
+      "from": "Kiem Thu Phan Mem.pdf",
+      "to": "references/classic-groove/Kiem Thu Phan Mem.pdf",
+      "reason": "Báo cáo tham khảo Classic Groove của nhóm 3 năm 2023, không phải giáo trình"
+    },
+    {
+      "from": "DoAn (2).docx",
+      "to": "references/other-groups/halona-fruits/DoAn (2).docx",
+      "reason": "Báo cáo kiểm thử Halona Fruits của nhóm Trần Trọng Hiếu, Trần Gia Bảo và cộng sự"
+    },
+    {
+      "from": "Group6_Presentation.pptx",
+      "to": "references/other-groups/group-06-pyweb/Group6_Presentation.pptx",
+      "reason": "Slide kiểm thử Pyweb Flask và MySQL của nhóm 6"
+    },
+    {
+      "from": "N8_TrầnGiaBảo_Assignment2.docx",
+      "to": "references/other-groups/group-08-elearning/N8_TrầnGiaBảo_Assignment2.docx",
+      "reason": "Bài Assignment 2 kiểm thử e-learning của Trần Gia Bảo nhóm 8"
+    },
+    {
+      "from": "Test cases.docx",
+      "to": "references/test-case-examples/ecommerce-php/Test cases.docx",
+      "reason": "Mẫu test case eCommerceSite-PHP; bản có bìa ghi Trương Tấn Đạt, bản còn lại là biến thể"
+    },
+    {
+      "from": "Test cases (1).docx",
+      "to": "references/test-case-examples/ecommerce-php/Test cases (1).docx",
+      "reason": "Mẫu test case eCommerceSite-PHP; bản có bìa ghi Trương Tấn Đạt, bản còn lại là biến thể"
+    },
+    {
+      "from": "selenium-java-4.27.0",
+      "to": "tools/selenium-java-4.27.0",
+      "reason": "Bộ JAR Selenium Java và các thư viện đi kèm"
+    }
+  ],
+  "operation": "Move whole original items into content groups; preserve original file contents and project internals.",
+  "verification": {
+    "original_regular_files": 77854,
+    "original_bytes": 2066935831,
+    "original_entries": 87238,
+    "git_repositories": 7,
+    "sha256_and_metadata_preserved": true,
+    "git_status_preserved": true,
+    "new_readmes": 10,
+    "errors": []
+  },
+  "verification_checkpoint": "Organization completed before publication preparation; this checkpoint is historical."
+}

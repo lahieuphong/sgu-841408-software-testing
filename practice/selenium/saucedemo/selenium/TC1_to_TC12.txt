@@ -1,0 +1,145 @@
+
+
+============================= TC1 -> TC4=============================
+
+
+import pytest
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+import time
+
+@pytest.fixture
+def driver():
+    # Khởi tạo trình duyệt Chrome
+    driver = webdriver.Chrome()
+    driver.maximize_window()
+    yield driver
+    # Đóng trình duyệt sau khi kiểm thử xong
+    driver.quit()
+
+# TC1: Valid Login (Đăng nhập hợp lệ)
+def test_valid_login(driver):
+    driver.get("https://www.saucedemo.com/")
+    driver.find_element(By.ID, "user-name").send_keys("standard_user")
+    driver.find_element(By.ID, "password").send_keys("secret_sauce")
+    driver.find_element(By.ID, "login-button").click()
+    time.sleep(2)  # Đợi một chút để trang tải
+    assert "inventory.html" in driver.current_url
+
+# TC2: Invalid Login (Đăng nhập không hợp lệ)
+def test_invalid_login(driver):
+    driver.get("https://www.saucedemo.com/")
+    driver.find_element(By.ID, "user-name").send_keys("invalid_user")
+    driver.find_element(By.ID, "password").send_keys("wrong_password")
+    driver.find_element(By.ID, "login-button").click()
+    time.sleep(2)  # Đợi một chút để thông báo lỗi hiển thị
+    error_message = driver.find_element(By.XPATH, "//h3[@data-test='error']").text
+    assert "Username and password do not match" in error_message
+
+# TC3: Empty Username/Password (Tên người dùng/Mật khẩu trống)
+def test_empty_username_password(driver):
+    driver.get("https://www.saucedemo.com/")
+    driver.find_element(By.ID, "login-button").click()
+    time.sleep(2)  # Đợi một chút để thông báo lỗi hiển thị
+    error_message = driver.find_element(By.XPATH, "//h3[@data-test='error']").text
+    assert "Username is required" in error_message
+
+# TC4: Logout Functionality (Chức năng đăng xuất)
+def test_logout_functionality(driver):
+    driver.get("https://www.saucedemo.com/")
+    driver.find_element(By.ID, "user-name").send_keys("standard_user")
+    driver.find_element(By.ID, "password").send_keys("secret_sauce")
+    driver.find_element(By.ID, "login-button").click()
+    time.sleep(2)  # Đợi để tải trang
+    driver.find_element(By.ID, "react-burger-menu-btn").click()
+    time.sleep(1)
+    driver.find_element(By.ID, "logout_sidebar_link").click()
+    time.sleep(2)  # Đợi một chút để tải lại trang đăng nhập
+    assert "saucedemo.com" in driver.current_url and "inventory.html" not in driver.current_url
+
+
+============================= TC5 -> TC12 =============================
+
+
+import pytest
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+import time
+
+@pytest.fixture
+def driver():
+    # Khởi tạo trình duyệt Chrome
+    driver = webdriver.Chrome()
+    driver.maximize_window()
+    yield driver
+    # Đóng trình duyệt sau khi kiểm thử xong
+    driver.quit()
+
+# Hàm đăng nhập dùng chung cho các test case
+def login(driver, username, password):
+    driver.get("https://www.saucedemo.com/")
+    driver.find_element(By.ID, "user-name").send_keys(username)
+    driver.find_element(By.ID, "password").send_keys(password)
+    driver.find_element(By.ID, "login-button").click()
+    time.sleep(2)  # Đợi để trang tải
+
+# TC5: Add Item to Cart (Thêm sản phẩm vào giỏ hàng)
+def test_add_item_to_cart(driver):
+    login(driver, "standard_user", "secret_sauce")
+    driver.find_element(By.ID, "add-to-cart-sauce-labs-backpack").click()
+    cart_count = driver.find_element(By.CLASS_NAME, "shopping_cart_badge").text
+    assert cart_count == "1"
+
+# TC6: Remove Item from Cart (Xóa sản phẩm khỏi giỏ hàng)
+def test_remove_item_from_cart(driver):
+    login(driver, "standard_user", "secret_sauce")
+    driver.find_element(By.ID, "add-to-cart-sauce-labs-backpack").click()
+    driver.find_element(By.ID, "remove-sauce-labs-backpack").click()
+    cart_items = driver.find_elements(By.CLASS_NAME, "shopping_cart_badge")
+    assert len(cart_items) == 0  # Kiểm tra giỏ hàng trống
+
+# TC7: View Cart Functionality (Xem giỏ hàng)
+def test_view_cart_functionality(driver):
+    login(driver, "standard_user", "secret_sauce")
+    driver.find_element(By.ID, "add-to-cart-sauce-labs-backpack").click()
+    driver.find_element(By.CLASS_NAME, "shopping_cart_link").click()
+    cart_item = driver.find_element(By.CLASS_NAME, "cart_item")
+    assert cart_item is not None
+
+# TC8: Checkout Process (Quy trình thanh toán)
+def test_checkout_process(driver):
+    login(driver, "standard_user", "secret_sauce")
+    driver.find_element(By.ID, "add-to-cart-sauce-labs-backpack").click()
+    driver.find_element(By.CLASS_NAME, "shopping_cart_link").click()
+    driver.find_element(By.ID, "checkout").click()
+    assert "checkout-step-one.html" in driver.current_url
+
+# TC9: Session Management (Quản lý phiên)
+def test_session_management(driver):
+    login(driver, "standard_user", "secret_sauce")
+    print("Waiting for session timeout (60 seconds)...")
+    time.sleep(60)  # Đợi 60 giây để phiên hết hạn
+    driver.refresh()
+    assert "saucedemo.com" in driver.current_url and "inventory.html" not in driver.current_url
+
+# TC10: Access Control Testing (Kiểm tra quyền truy cập)
+def test_access_control(driver):
+    driver.get("https://www.saucedemo.com/inventory.html")
+    time.sleep(2)
+    assert "login.html" in driver.current_url
+
+# TC11: Data Encryption Verification (Xác minh mã hóa dữ liệu)
+def test_data_encryption(driver):
+    # Đảm bảo dữ liệu được truyền qua HTTPS
+    driver.get("https://www.saucedemo.com/")
+    assert "https" in driver.current_url
+
+# TC12: SQL Injection Attempt (Thử tấn công SQL Injection)
+def test_sql_injection(driver):
+    driver.get("https://www.saucedemo.com/")
+    driver.find_element(By.ID, "user-name").send_keys("admin' OR '1'='1")
+    driver.find_element(By.ID, "password").send_keys("password")
+    driver.find_element(By.ID, "login-button").click()
+    time.sleep(2)
+    error_message = driver.find_element(By.XPATH, "//h3[@data-test='error']").text
+    assert "Username and password do not match" in error_message

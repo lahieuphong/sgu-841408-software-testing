@@ -1,0 +1,322 @@
+:root {
+  --ora: #f2623e;
+  --whi: #ffffff;
+  --bla: #000000;
+  --lig: #1d1d20;
+  --gr1: #a1a0a0;
+  --gr2: #e9e9e9;
+}
+
+#accountManager {
+  font-family: "Dosis", sans-serif;
+  height: 91vh;
+  width: 95%;
+  margin: 0 auto;
+  margin-top: -2%;
+  /* position: relative; */
+  min-width: 840px;
+}
+
+#accountManager .header {
+  display: flex;
+  margin-bottom: 2vh;
+}
+
+#accountManager .header h2 {
+  margin-right: 10px;
+}
+#accountManager .header h2 i{
+  margin-right: 10px;
+ }
+
+#accountManager .button-placeholder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#accountManager .edit-button,
+#accountManager .save-button,
+#accountManager .delete-button,
+#accountManager .new-button {
+  flex-direction: row;
+  display: flex;
+  /* width: 90px; */
+  margin: auto;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--ora);
+  border-radius: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+#accountManager .delete-button {
+  background-color: var(--whi);
+  color: var(--bla);
+}
+
+#accountManager .title-list {
+  width: 93%;
+  height: 5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--whi);
+  font-size: calc(12px + 0.5vw);
+  border-radius: 20px 20px 0 0;
+  color: var(--ora);
+  border-bottom: 3px solid;
+}
+
+#accountManager .title-list .title-placeholder {
+  width: 97%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 0.3fr 0.5fr 0.8fr 0.8fr 0.5fr 0.5fr 0.2fr;
+  justify-content: center;
+  margin: auto;
+}
+
+#accountManager .title-list .title-placeholder .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+  height: 70%;
+  width: 100%;
+  margin: auto;
+}
+
+#accountManager .list {
+  width: 93%;
+  max-height: 87vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--whi);
+  height: 86vh;
+  /* border-radius: 10px 30px 0 0; */
+  overflow-y: scroll;
+}
+
+#accountManager .placeholder {
+  width: 98%;
+  /* height: 75px; */
+  margin: 0 1%;
+  color: var(--bla);
+  position: relative;
+  padding: 13px 0;
+  border-bottom: 2px solid var(--ora);
+}
+
+#accountManager .placeholder .info {
+  display: grid;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  grid-template-rows: 1fr;
+  grid-template-columns: 0.3fr 0.5fr 0.8fr 0.8fr 0.5fr 0.5fr 0.2fr;
+  justify-content: center;
+}
+
+#accountManager .placeholder .info .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+  border-right: var(--ora) solid 2px;
+  height: 70%;
+  width: 100%;
+  margin: auto;
+}
+
+#accountManager .placeholder .info .item:last-child {
+  border: none;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  background-color: var(--whi);
+  width: 5px;
+  border: 50px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--ora);
+}
+
+#accountManager .modal-placeholder {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: opacity(50%);
+  height: 100vh;
+  width: 87vw;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+#accountManager .modal-box {
+  background-color: var(--whi);
+  border-radius: 10px;
+  width: 50%;
+  /* height: 30vw; */
+  margin: 7vh auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 5fr 1fr;
+  color: var(--ora);
+  animation: loader 0.4s;
+  animation-iteration-count: 1;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.7);
+}
+
+#accountManager .modal-box .modal-header {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(2px + 1vw);
+  margin-right: 10px;
+}
+
+#accountManager .modal-box .modal-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+#accountManager .modal-box .modal-info .modal-item {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr;
+  width: 80%;
+  margin: 0 10%;
+  font-size: calc(5px + 1vw);
+}
+
+/* #accountManager .modal-box .modal-info .modal-item .item-header {
+    padding: 0 5%;
+    width: 90%;
+} */
+
+#accountManager .modal-box .modal-info .modal-item .item-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1% 0;
+  height: 50px;
+}
+
+#accountManager .modal-box .modal-info .modal-item .item-input input {
+  width: 100%;
+  height: 90%;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--gr2);
+  color: var(--bla);
+  padding: 0 5%;
+  font-weight: 600;
+  font-family: "Dosis", sans-serif;
+  font-size: calc(4px + 1vw);
+  cursor: pointer;
+}
+
+#accountManager #detail-account input,
+#accountManager #detail-account select,
+#accountManager #edit-account input.accountID {
+  cursor: default;
+}
+
+#accountManager .modal-box .modal-info .modal-item .item-input input:nth-of-type(1) {
+  color: var(--gr1);
+}
+
+#accountManager .modal-box .modal-info .modal-item .item-input input:focus {
+  outline-color: var(--ora);
+  outline-width: 2px;
+}
+
+#accountManager .modal-box .modal-info .modal-item .item-input select {
+  width: 100%;
+  height: 90%;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--gr2);
+  color: var(--bla);
+  padding: 0 5%;
+  font-weight: 600;
+  font-family: "Dosis", sans-serif;
+  font-size: calc(4px + 1vw);
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+}
+
+#accountManager .modal-box .modal-info .modal-item .item-input select:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--ora);
+}
+
+#accountManager .modal-box .modal-button {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+#accountManager .modal-box .button-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  width: 80%;
+  color: var(--whi);
+  margin: 0 10%;
+  column-gap: 10%;
+}
+
+#accountManager .modal-box .edit-button,
+#accountManager .modal-box .back-button {
+  flex-direction: row;
+  display: flex;
+  height: 2.5vw;
+  width: 90%;
+  margin: auto;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--ora);
+  border-radius: 10px;
+  padding: 5%;
+  cursor: pointer;
+}
+
+#accountManager .modal-box .back-button {
+  background-color: var(--bla);
+  color: var(--whi);
+}
+
+#accountManager .save-button {
+  opacity: 0.5;
+  cursor: default;
+}
+@media screen and (max-width: 768px) {
+  #accountManager {
+    width: 615px;
+    margin-left: 25px;
+  }
+  #accountManager .title-list {
+    font-size: 15px;
+    width: 615px;
+  }
+
+  #accountManager .list {
+    font-size: 12px;
+    width: 615px;
+  }
+
+  #accountManager .search-bar .date-begin input,
+  #accountManager .search-bar .date-end input {
+    font-size: 10px;
+  }
+}

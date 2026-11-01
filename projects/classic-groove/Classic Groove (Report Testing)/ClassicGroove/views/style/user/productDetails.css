@@ -1,0 +1,107 @@
+#product-details {
+  display: flex;
+  flex-direction: row;
+  font-family: "Dosis", sans-serif;
+  height: auto;
+  position: relative;
+}
+
+#product-details .left {
+  width: 40%;
+  padding: 5%;
+}
+#product-details .left img {
+  border-radius: 30px;
+  width: 100%;
+  background-color: var(--lig);
+}
+
+#product-details .right {
+  width: 60%;
+  padding-top: 5%;
+}
+#product-details .title {
+  color: var(--whi);
+  font-size: calc(30px + 1vw);
+}
+
+#product-details .sub-title {
+  color: var(--ora);
+  font-size: calc(15px + 1vw);
+}
+#product-details .description {
+  color: var(--gr1);
+  margin: 25px 0;
+  width: 95%;
+  text-align: justify;
+}
+
+#product-details .control {
+  display: flex;
+  margin-bottom: 25px;
+}
+
+#product-details .control > * {
+  margin-right: 20px;
+}
+
+#product-details .price {
+  color: var(--ora);
+  font-size: calc(15px + 1vw);
+  margin-bottom: 3%;
+}
+
+#product-details .btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 13%;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0 3px 3px 2px rgba(0,0,0,0.7);
+  transition: 0.3s ease-in-out;
+  user-select: none;
+  padding: 1%;
+  min-width: 100px;
+}
+#product-details .btn:active {
+  transition: 0.3s ease-in-out;
+  transform: translateY(3px);
+}
+#product-details .btn i {
+  font-size: calc(15px + 1vw);
+}
+#product-details .add-to-cart-btn {
+  background-color: var(--whi);
+  color: var(--ora);
+}
+#product-details .favorite-btn {
+  background-color: var(--ora);
+  color: var(--whi);
+}
+
+#product-details .songs-container {
+  margin: 8px 0;
+  color: var(--gr1);
+}
+#product-details h1 i {
+  cursor: pointer;
+}
+
+#product-details h1 i:hover {
+  animation-name: rotate;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+

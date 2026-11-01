@@ -1,0 +1,260 @@
+#login {
+  font-family: "Dosis", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 85vh;
+}
+
+#login input {
+  color: black;
+}
+
+#login p {
+  margin-top: 10px;
+}
+
+#login .header,
+#login .register .header {
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0 10px 0;
+  color: var(--ora);
+  cursor: default;
+}
+
+#login .login-form {
+  background-color: var(--whi);
+  display: flex;
+  top: 0;
+  right: 0;
+  justify-content: center;
+  align-items: center;
+  height: 65vh;
+  width: 65vw;
+  border-radius: 20px;
+  margin: auto;
+  position: relative;
+}
+
+#login .left,
+#login .right {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  transition: all 0.5s ease-in-out;
+  left: 0;
+  z-index: 2;
+}
+
+#login .right {
+  opacity: 0;
+  transform: translateX(50%);
+  z-index: 1;
+}
+
+#login .container {
+  width: 80%;
+}
+
+#login input[type="text"],
+#login input[type="password"] {
+  font-family: "Dosis", sans-serif;
+  font-size: 15px;
+  width: 100%;
+  /* height: 7vh; */
+  border: none;
+  border-radius: 15px;
+  background-color: var(--gr2);
+  margin: 10px 0px 10px 0px;
+  outline: none;
+  padding: 15px 0px 15px 20px;
+}
+
+#login input[type="text"]::placeholder,
+input[type="password"]::placeholder,
+/* Chrome, Firefox, Opera, Safari 10.1+ */
+#login input[type="text"]:-ms-input-placeholder,
+input[type="password"]:-ms-input-placeholder,
+/* Internet Explorer 10-11 */
+#login input[type="text"]:-ms-input-placeholder,
+input[type="password"]:-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: var(--gr1);
+  opacity: 1;
+  /* Firefox */
+}
+
+#login input[type="password"]::-ms-reveal,
+#login input[type="password"]::-ms-clear {
+  display: none;
+}
+
+#login .left i {
+  color: var(--gr1);
+  float: right;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 5%;
+  bottom: 0;
+}
+
+#login .bottom {
+  padding: 0px 15px 0px 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+#login .left-bottom {
+  display: flex;
+  align-items: center;
+}
+
+#login input[type="checkbox"] {
+  appearance: none;
+  height: 1.2vw;
+  width: 1.2vw;
+  border: 1px solid var(--gr1);
+  border-radius: 5px;
+  margin-right: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#login .bottom label,
+#login .submit p {
+  font-size: 15px;
+}
+
+#login input[type="checkbox"]:after {
+  font-family: FontAwesome;
+  font-weight: 900;
+  color: var(--ora);
+  content: "\f00c";
+  display: none;
+}
+
+#login input[type="checkbox"]:checked:after {
+  display: block;
+}
+
+#login .submit,
+#login .register .submit {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+#login input[type="button"],
+#login .register input[type="button"] {
+  font-family: "Dosis", sans-serif;
+  border: none;
+  cursor: pointer;
+  border-radius: 15px;
+  font-size: 20px;
+  height: 50px;
+  outline: none;
+  width: 150px;
+  color: var(--whi);
+  background-color: var(--ora);
+}
+
+#login input[type="button"]:hover,
+#login .register input[type="button"]:hover {
+  box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
+}
+
+#login .circle-container,
+#login .register .circle-container {
+  display: flex;
+  flex-direction: row;
+}
+
+#login .circle,
+#login .register .circle {
+  margin: 0px 10px 0px 10px;
+  width: 2.5vw;
+  height: 2.5vw;
+  border-radius: 50%;
+  border: 1px solid blue;
+}
+
+#login .color333 {
+  color: var(--gr1);
+}
+
+#login .register .left {
+  width: 50%;
+
+}
+
+#login .register .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+#login .register .submit p {
+  margin-top: 10px;
+  font-size: 1.1vw;
+  color: var(--gr1);
+}
+
+#login .register .text {
+  font-family: "Dosis", sans-serif;
+  font-size: 15px;
+  width: 100%;
+  border: none;
+  border-radius: 15px;
+  background-color: var(--gr2);
+  margin: 10px 0px 10px 0px;
+  outline: none;
+  padding: 15px 0 15px 20px;
+  /* height: 4.5vh; */
+}
+
+#login .register i {
+  color: var(--gr1);
+  float: right;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 4%;
+  bottom: 0;
+}
+
+#login .poster {
+  position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 50.1%;
+    background-image: url(../../assets/img/LoginPoster.jpg);
+    border-radius: 15px;
+    transition: all 0.5s ease-in-out;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    z-index: 3;
+}
+
+/* #login .poster:hover {
+  transform: translate(-100%);
+  background-position: left;
+
+/* } */

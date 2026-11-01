@@ -1,0 +1,618 @@
+:root {
+  --ora: #f2623e;
+  --whi: #ffffff;
+  --bla: #000000;
+  --lig: #1d1d20;
+  --gr1: #a1a0a0;
+  --gr2: #e9e9e9;
+}
+
+#supplyRecord {
+  font-family: "Dosis", sans-serif;
+  height: 91vh;
+  width: 95%;
+  margin: 0 auto;
+  margin-top: -2%;
+  min-width: 840px;
+
+  /* position: relative; */
+}
+
+#supplyRecord .button-placeholder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#supplyRecord .header {
+  display: flex;
+  margin-bottom: 2vh;
+}
+#supplyRecord .header h2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 10px;
+}
+#supplyRecord .header h2 i{
+  margin-right: 10px;
+ }
+
+#supplyRecord .new-button,
+#supplyRecord .restock-button {
+  flex-direction: row;
+    display: flex;
+    /* width: 90px; */
+    margin: auto;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--ora);
+    border-radius: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#supplyRecord .new-button:active,
+#supplyRecord .restock-button:active {
+  transform: translateY(3px);
+  transition: 0.1s;
+}
+
+#supplyRecord .delete-button {
+  background-color: var(--whi);
+  color: var(--bla);
+}
+
+#supplyRecord .title-list {
+  width: 93%;
+  height: 5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: calc(12px + 0.5vw);
+  background: var(--whi);
+  border-radius: 20px 20px 0 0;
+  color: var(--ora);
+  border-bottom: 3px solid;
+}
+
+#supplyRecord .title-list .title-placeholder {
+  width: 97%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 2fr 2fr 3fr 3fr 2fr 1fr;
+  justify-content: center;
+  margin: auto;
+}
+
+#supplyRecord .title-list .title-placeholder .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+  height: 70%;
+  width: 100%;
+  margin: auto;
+}
+
+#supplyRecord .list {
+  width: 93%;
+  max-height: 87vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--whi);
+  height: 86vh;
+  /* border-radius: 10px 30px 0 0; */
+  overflow-y: scroll;
+}
+
+#supplyRecord .placeholder {
+  width: 98%;
+  /* height: 75px; */
+  margin: 0 1%;
+  color: var(--bla);
+  position: relative;
+  padding: 13px 0;
+  border-bottom: 2px solid var(--ora);
+}
+
+#supplyRecord .placeholder .info {
+  display: grid;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 2fr 2fr 3fr 3fr 2fr 1fr;
+  justify-content: center;
+}
+
+#supplyRecord .placeholder .info .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+  border-right: var(--ora) solid 2px;
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+#supplyRecord .placeholder .info .item:last-child {
+  border: none;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  background-color: var(--whi);
+  width: 5px;
+  border: 50px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--ora);
+}
+
+#supplyRecord .modal-placeholder {
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: opacity(50%);
+  height: 100vh;
+  width: 87vw;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+#supplyRecord .modal-box {
+  background-color: var(--whi);
+  border-radius: 10px;
+  width: 55%;
+  height: auto;
+  margin: 13vh auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.5fr 2fr 0.5fr;
+  color: var(--ora);
+  animation: loader 0.4s;
+  animation-iteration-count: 1;
+  /* box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.7); */
+}
+
+@keyframes loader {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes back {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+#supplyRecord .modal-box .modal-header {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(2px + 1vw);
+  grid-column: 1 / span 2;
+  width: 30%;
+  margin: 0% 35%;
+  margin-bottom: 1%;
+}
+
+#supplyRecord .modal-box .modal-left {
+  width: 100%;
+  border-right: #f2623e solid 3px;
+}
+
+#supplyRecord .modal-box .modal-right {
+  width: 100%;
+}
+
+#supplyRecord .modal-box .modal-right .title-list {
+  width: 100%;
+  height: 3vh;
+  font-size: calc(3px + 1vw);
+}
+
+#supplyRecord .modal-box .modal-right .title-list .title-placeholder {
+  width: 97%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 2fr 2fr 2fr;
+  justify-content: center;
+  margin: auto;
+}
+
+#supplyRecord
+  #new-supply
+  .modal-box
+  .modal-right
+  .title-list
+  .title-placeholder {
+  grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+}
+
+#supplyRecord .modal-box .modal-right .list {
+  width: 100%;
+  max-height: 23vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: calc(3px + 1vw);
+  background-color: var(--whi);
+  height: auto;
+  border-radius: 10px 30px 0 0;
+  overflow-y: scroll;
+}
+
+#supplyRecord .modal-box .modal-right .list .placeholder {
+  width: 98%;
+  height: 50px;
+  margin: 0 1%;
+  color: var(--bla);
+  position: relative;
+  padding: 13px 0;
+  border-bottom: 4px solid var(--ora);
+}
+
+#supplyRecord .modal-box .modal-right .list .add-button {
+  cursor: pointer;
+  height: 3.5vw;
+  padding-top: 1vw;
+  color: #f2623e;
+}
+
+#supplyRecord .modal-right .list .placeholder .info {
+  display: grid;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 2fr 2fr 2fr;
+  justify-content: center;
+}
+
+#supplyRecord #new-supply .modal-right .list .placeholder .info {
+  grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+}
+
+#supplyRecord .modal-right .list .placeholder .info .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+  border-right: var(--gr1) solid 2px;
+  color: var(--gr1);
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+#supplyRecord .modal-right .list .placeholder .info .item:nth-of-type(5) {
+  border: none;
+}
+
+#supplyRecord .modal-box .modal-left .modal-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* grid-template-rows: 1fr 1fr 1fr; */
+  height: 100%;
+}
+
+#supplyRecord .modal-box .modal-left .modal-info .modal-item:nth-of-type(2n) {
+  margin: 0;
+}
+
+#supplyRecord
+  .modal-box
+  .modal-left
+  .modal-info
+  .modal-item:nth-of-type(2n)
+  .item-input {
+  width: 115%;
+}
+
+#supplyRecord
+  .modal-box
+  .modal-left
+  .modal-info
+  .modal-item:last-child
+  .item-header,
+#supplyRecord
+  .modal-box
+  .modal-left
+  .modal-info
+  .modal-item:nth-last-child(2)
+  .item-header {
+  padding: 3% 0;
+}
+
+/* #supplyRecord
+  .modal-box
+  .modal-left
+  .modal-info
+  .modal-item:last-child
+  .item-input,
+#supplyRecord
+  .modal-box
+  .modal-left
+  .modal-info
+  .modal-item:nth-last-child(2)
+  .item-input {
+  height: 150%;
+  margin-top: -60px;
+} */
+
+#supplyRecord .modal-box .modal-info .modal-item {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr;
+  width: 80%;
+  margin: 0 10%;
+}
+
+#supplyRecord .modal-box .modal-info .modal-item .item-header {
+  padding: 3% 0%;
+  width: 90%;
+}
+
+#supplyRecord .modal-box .modal-info .modal-item .item-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1% 0;
+}
+
+#supplyRecord .modal-box .modal-info .modal-item .item-input input {
+  width: 100%;
+  height: 90%;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--gr2);
+  color: var(--bla);
+  padding: 0 5%;
+  font-weight: 600;
+  font-family: "Dosis", sans-serif;
+  font-size: calc(4px + 1vw);
+  /* cursor: pointer; */
+}
+
+#supplyRecord .modal-box .modal-info .modal-item .item-input textarea {
+  width: 100%;
+  height: 90%;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--gr2);
+  color: var(--bla);
+  padding: 0 5%;
+  font-weight: 600;
+  font-family: "Dosis", sans-serif;
+  font-size: calc(4px + 1vw);
+}
+
+#supplyRecord
+  .modal-box
+  .modal-info
+  .modal-item
+  .item-input
+  input:nth-of-type(1) {
+  color: var(--gr1);
+}
+
+#supplyRecord .modal-box .modal-info .modal-item .item-input input:focus {
+  outline-color: var(--ora);
+  outline-width: 2px;
+}
+
+#supplyRecord .modal-box .modal-info .modal-item .item-input select {
+  width: 100%;
+  height: 90%;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--gr2);
+  color: var(--bla);
+  padding: 0 5%;
+  font-weight: 600;
+  font-family: "Dosis", sans-serif;
+  font-size: calc(4px + 1vw);
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+}
+
+#supplyRecord .modal-box .modal-info .modal-item .item-input select:focus {
+  outline: none;
+  /* box-shadow: 0 0 0 2px var(--ora); */
+}
+
+#supplyRecord .modal-box .modal-button {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column: 1 / span 2;
+}
+
+#supplyRecord .modal-box .button-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  width: 90%;
+  color: var(--whi);
+  margin-left: 10%;
+  align-items: end;
+}
+
+#supplyRecord .modal-box .edit-button,
+#supplyRecord .modal-box .back-button,
+#supplyRecord .modal-box .delete-button,
+#supplyRecord .modal-box .save-button {
+  flex-direction: row;
+  display: flex;
+  height: 2.5vw;
+  width: 75%;
+  margin: auto;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--ora);
+  border-radius: 10px;
+  padding: 5%;
+  cursor: pointer;
+
+  /* box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.7); */
+}
+
+#supplyRecord .modal-box .edit-button:active,
+#supplyRecord .modal-box .back-button:active,
+#supplyRecord .modal-box .delete-button:active,
+#supplyRecord .modal-box .save-button:active {
+  transform: translateY(3px);
+  transition: 0.1s;
+}
+
+#supplyRecord .modal-box .back-button {
+  background-color: var(--bla);
+  color: var(--whi);
+}
+
+#supplyRecord .modal-box .delete-button {
+  background-color: var(--ora);
+  color: var(--bla);
+}
+
+#supplyRecord .btnAddAlbum {
+  display: flex;
+  justify-content: center;
+}
+
+#supplyRecord .btnAddAlbum input {
+  margin-top: 5px;
+  font-size: 25px;
+  color: var(--ora);
+  background-color: var(--whi);
+  padding: 5px;
+  border: none;
+  text-align: center;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+#supplyRecord #add_exist_album {
+  display: none;
+}
+
+#supplyRecord #add_exist_album .modal-box {
+  display: flex;
+  align-items: center;
+  padding: 4%;
+  flex-direction: column;
+  width: fit-content;
+  height: fit-content;
+}
+
+#supplyRecord #add_exist_album .modal-box h1 {
+  margin-bottom: 15px;
+}
+
+#supplyRecord #add_exist_album .modal-box .btn-add {
+  color: var(--whi);
+  background-color: var(--ora);
+  border: 1px solid var(--whi);
+  cursor: pointer;
+  width: max-content;
+  padding: 10px;
+  border-radius: 15px;
+  border: 1px solid var(--whi);
+  margin-right: 10px;
+  width: 6vw;
+}
+
+#supplyRecord #add_exist_album .modal-box .btn-cancel {
+  color: var(--whi);
+  background-color: var(--bla);
+  border: 1px solid var(--whi);
+  cursor: pointer;
+  width: max-content;
+  padding: 10px;
+  border-radius: 15px;
+  border: 1px solid var(--whi);
+  width: 6vw;
+}
+
+#supplyRecord #suggestion-container {
+  position: relative;
+}
+
+#supplyRecord #suggestion-container label {
+  font-size: 24px;
+}
+
+#supplyRecord #suggestion-container input {
+  width: 100%;
+  font-size: 20px;
+}
+
+#supplyRecord #suggestion-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-top: none;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+#supplyRecord #suggestion-list li {
+  padding: 5px;
+  cursor: pointer;
+}
+
+#supplyRecord #suggestion-list li:hover {
+  background-color: #f2f2f2;
+}
+
+#supplyRecord #new-supply .placeholder input {
+  width: 90%;
+}
+
+@media screen and (max-width: 768px) {
+  #supplyRecord {
+    width: 615px;
+    margin-left: 25px;
+  }
+  #supplyRecord .title-list {
+    font-size: 15px;
+    width: 615px;
+  }
+
+  #supplyRecord .list {
+    font-size: 12px;
+    width: 615px;
+  }
+
+  #supplyRecord .search-bar .date-begin input,
+  #supplyRecord .search-bar .date-end input {
+    font-size: 10px;
+  }
+}

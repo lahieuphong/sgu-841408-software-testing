@@ -1,0 +1,9 @@
+Các lệnh trong Git:
+- Đẩy lên trên github: 
+"git add ."
+"git commit -m "Nội dung đã thay đổi" "
+"git push"
+- Hiện thị thay đổi đã làm:
+"git status"
+- Lấy dữ liệu src về máy từ github:
+"git pull"

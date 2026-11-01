@@ -1,0 +1,21 @@
+User:
+-home
+-San pham
+  +dang nhap/ dang xuat
+    .dang ki(yeu cua mua hang chi khi la khach hang)
+  +Bam zo san pham -> chi tiet san pham
+  +tim kiem
+    .tim kiem theo ten (co ban)
+    .tim kiem ket hop theo ten, khoang gia, loai(nang cao)
+-thongTinNguoiDung
+  +don dat hang
+    .tra sau
+  +(lich su mua hang)
+Admin:
+-Quan ly Tai khoan
+  them xoa chinh sua
+-Quan ly San pham
+  them xoa chinh sua
+-Quan ly don dat hang
+  xu ly
+-thong ke

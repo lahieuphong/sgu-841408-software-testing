@@ -1,0 +1,171 @@
+#purchaseHistory {
+  display: flex;
+  justify-content: center;
+  font-family: "Dosis", sans-serif;
+  padding-bottom: 70px;
+}
+#purchaseHistory .container {
+  width: 80%;
+}
+
+#purchaseHistory h1 {
+  color: var(--whi);
+  margin: 15px 0 50px 0;
+}
+
+#purchaseHistory .row {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0;
+}
+#purchaseHistory .general {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 2.5vw;
+  font-size: 2vw;
+  color: var(--bla);
+  border-radius: 20px;
+  background-color: var(--gr2);
+  padding: 0 20px;
+  cursor: pointer;
+}
+
+#purchaseHistory .general div,
+#purchaseHistory .general i {
+  color: var(--gr1);
+}
+#purchaseHistory .row .general span{
+  text-align: center;
+}
+#purchaseHistory .row .general div{
+  user-select: none;
+}
+#purchaseHistory .row:nth-of-type(1) .general span {
+  position: relative;
+}
+#purchaseHistory .row .general span:nth-of-type(1) {
+  width: 10%;
+}
+#purchaseHistory .row .general span:nth-of-type(2) {
+  width: 20%;
+}
+#purchaseHistory .row .general span:nth-of-type(3) {
+  width: 30%;
+}
+#purchaseHistory .row .general span:nth-of-type(4) {
+  width: 20%;
+}
+#purchaseHistory .row .general span:nth-of-type(5) {
+  width: 20%;
+}
+#purchaseHistory .row .general span:nth-of-type(1):before {
+  position: absolute;
+  content: "No.";
+  top: -50px;
+  color: var(--whi);
+}
+#purchaseHistory .row:nth-of-type(1) .general span:nth-of-type(2):before {
+  position: absolute;
+  content: "Order id";
+  top: -50px;
+  left: -30px;
+  right: -30px;
+  text-align: center;
+  color: var(--whi);
+}
+#purchaseHistory .row:nth-of-type(1) .general span:nth-of-type(3):before {
+  position: absolute;
+  content: "Order date";
+  top: -50px;
+  color: var(--whi);
+}
+#purchaseHistory .row:nth-of-type(1) .general span:nth-of-type(4):before {
+  position: absolute;
+  content: "Total";
+  top: -50px;
+  color: var(--whi);
+}
+#purchaseHistory .row:nth-of-type(1) .general span:nth-of-type(5):before {
+  position: absolute;
+  content: "Status";
+  top: -50px;
+  color: var(--whi);
+}
+#purchaseHistory .details {
+  width: 95%;
+  background-color: var(--whi);
+  border-radius: 0 0 20px 20px;
+  display: none;
+  justify-content: center;
+  padding: 20px;
+  flex-direction: column;
+}
+
+#purchaseHistory .product {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#purchaseHistory .left {
+  width: 20%;
+  display: flex;
+  align-items: center;
+}
+
+#purchaseHistory .left img {
+  width: 100%;
+  display: block;
+}
+
+#purchaseHistory .right {
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#purchaseHistory .right h2 {
+  font-size: 2vw;
+}
+#purchaseHistory .right h2:nth-of-type(1) {
+  color: var(--bla);
+}
+#purchaseHistory .right h2:nth-of-type(2) {
+  color: var(--ora);
+}
+#purchaseHistory .right h2:nth-of-type(3) {
+  color: var(--gr1);
+}
+#purchaseHistory .right .bottom {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+}
+
+#purchaseHistory .right .bottom div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#purchaseHistory .right .bottom .title {
+  color: var(--bla);
+  font-size: 1.7vw;
+  text-align: center;
+}
+
+#purchaseHistory .right .bottom .content {
+  color: var(--ora);
+  font-size: 1.7vw;
+  text-align: center;
+}
+
+#purchaseHistory .details hr {
+  width: 70%;
+  margin: 15px auto;
+  border: 1px solid var(--bla);
+}

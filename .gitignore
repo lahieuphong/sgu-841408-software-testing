@@ -1,0 +1,44 @@
+# Original local Git histories and private pre-publication source copies.
+/.local-backups/
+
+# Installed dependencies and generated files.
+.venv/
+venv/
+env/
+node_modules/
+vendor/
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cache/
+*.py[cod]
+.coverage
+htmlcov/
+coverage/
+target/
+build/
+dist/
+
+# Browser profiles contain cookies, sessions and account data.
+account_*/
+my_chrome_profile/
+my_firefox_profile/
+*my_profile*/
+
+# Local environment configuration and credentials.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+token.json
+
+# IDE state, OS metadata and temporary files.
+.idea/
+.DS_Store
+Thumbs.db
+~$*
+*.log
+*.tmp

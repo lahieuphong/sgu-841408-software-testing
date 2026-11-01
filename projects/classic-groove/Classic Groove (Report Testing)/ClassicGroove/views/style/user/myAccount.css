@@ -1,0 +1,362 @@
+#myaccount {
+  font-family: "Dosis", sans-serif;
+  font-size: 25px;
+  font-weight: 900;
+  color: var(--whi);
+  width: 100%;
+  /* height: 94vh; */
+  padding: 0 2%;
+}
+#myaccount h2 {
+  color: var(--whi);
+  margin-top: 2%;
+  font-size: 30px;
+}
+
+#myaccount .flex-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+#myaccount .flex-container .top-container {
+  width: 70%;
+  background: var(--whi);
+  border-radius: 30px;
+  margin-top: 2%;
+  color: var(--bla);
+  padding: 2%;
+}
+
+#myaccount .flex-container .top-container .container-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.8fr 1fr 0.8fr 1fr 0.8fr 1fr;
+  font-size: 20px;
+
+}
+
+#myaccount .flex-container .top-container .container-info .title {
+  padding: 0% 5%;
+  margin-bottom: 1%;
+  color: var(--ora);
+}
+
+#myaccount .flex-container .top-container .container-info .info {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1%;
+}
+
+#myaccount .flex-container .top-container .container-info .info input {
+  width: 95%;
+  border-radius: 20px;
+  padding: 2%;
+  padding-left: 3%;
+  font-size: calc(5px + 1vw);
+  background-color: var(--gr2);
+  font-family: "Dosis", sans-serif;
+  border: none;
+  outline: none;
+}
+#myaccount .flex-container .top-container .contain-button {
+  width: 98.5%;
+  display: flex;
+  justify-content: right;
+  margin-top: 2%;
+}
+#myaccount .flex-container .top-container .contain-button .button-placeholder {
+  width: 20%;
+  padding: 1%;
+  background-color: var(--ora);
+  color: var(--whi);
+  border-radius: 20px;
+  display: grid;
+  font-size: calc(0px + 1.3vw);
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr;
+  box-shadow: 0 2px 3px 2px rgba(253, 83, 26, 0.7);
+  cursor: no-drop;
+  opacity: 0.5;
+}
+#myaccount
+  .flex-container
+  .top-container
+  .contain-button
+  .button-placeholder:active {
+  transition: 0.3s ease-in-out;
+  transform: translateY(8px);
+}
+#myaccount
+  .flex-container
+  .top-container
+  .contain-button
+  .button-placeholder
+  .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#myaccount .flex-container .bottom-container {
+  width: 70%;
+  background: var(--gr2);
+  border-radius: 30px;
+  margin-top: 2%;
+  color: var(--bla);
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5%;
+}
+
+#myaccount .flex-container .bottom-container .order-placeholder {
+  width: 100%;
+  height: auto;
+  border-bottom: 3px var(--ora) solid;
+  padding: 0% 1.5% 5% 1.5%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50px 5fr 50px 50px;
+  background-color: var(--gr2);
+  font-size: 20px;
+}
+
+#myaccount .flex-container .bottom-container .order-placeholder .order-header {
+  width: 95%;
+  margin: 0 2.5%;
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: 1fr;
+  color: var(--gr1);
+}
+#myaccount
+  .flex-container
+  .bottom-container
+  .order-placeholder
+  .order-header
+  .order-date {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+#myaccount
+  .flex-container
+  .bottom-container
+  .order-placeholder
+  .order-header
+  .order-id,
+#myaccount
+  .flex-container
+  .bottom-container
+  .order-placeholder
+  .order-header
+  .order-status {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+#myaccount
+  .flex-container
+  .bottom-container
+  .order-placeholder
+  .order-header
+  .order-status {
+  color: var(--ora);
+  padding-right: 6%;
+}
+
+#myaccount .flex-container .bottom-container .order-placeholder .order-details {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  background-color: var(--whi);
+  border-radius: 20px 20px 0 0;
+}
+#myaccount
+  .flex-container
+  .bottom-container
+  .order-placeholder
+  .order-details
+  .product-placeholder {
+  height: auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 3fr 7fr;
+  grid-template-rows: 1fr;
+  border-bottom: 3px solid var(--gr2);
+}
+
+#myaccount
+  .flex-container
+  .bottom-container
+  .order-placeholder
+  .order-details
+  .product-placeholder
+  .img-placeholder {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#myaccount
+  .flex-container
+  .bottom-container
+  .order-placeholder
+  .order-details
+  .product-placeholder
+  .img-placeholder
+  img {
+  height: 100%;
+}
+#myaccount
+  .flex-container
+  .bottom-container
+  .order-placeholder
+  .order-details
+  .product-placeholder
+  .info-placeholder {
+  display: grid;
+  margin: 8% 5%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  overflow: hidden;
+}
+#myaccount
+  .flex-container
+  .bottom-container
+  .order-placeholder
+  .order-details
+  .product-placeholder
+  .info-placeholder
+  .artists-name {
+  color: var(--ora);
+}
+#myaccount
+  .flex-container
+  .bottom-container
+  .order-placeholder
+  .order-details
+  .product-placeholder
+  .info-placeholder
+  .sub-total {
+  text-align: right;
+  color: var(--ora);
+}
+
+#myaccount .flex-container .bottom-container .order-placeholder .order-total {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  background-color: var(--whi);
+  padding: 0% 4% 0 3%;
+}
+#myaccount
+  .flex-container
+  .bottom-container
+  .order-placeholder
+  .order-total
+  .total-bill {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  color: var(--ora);
+}
+#myaccount
+  .flex-container
+  .bottom-container
+  .order-placeholder
+  .order-total
+  .total-title {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+#myaccount .flex-container .bottom-container .order-placeholder .order-address {
+  display: grid;
+  grid-template-columns: 13fr 2fr;
+  grid-template-rows: 1fr;
+  background-color: var(--whi);
+  padding: 1% 4% 6% 3%;
+  border-radius: 0 0 20px 20px;
+  width: 100%;
+}
+#myaccount
+  .flex-container
+  .bottom-container
+  .order-placeholder
+  .order-address
+  .shipping-address {
+  justify-content: left;
+  display: flex;
+  align-items: center;
+  background-color: var(--whi);
+}
+
+#myaccount
+  .flex-container
+  .bottom-container
+  .order-placeholder
+  .order-address
+  .cancel-button {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: var(--ora);
+  border: 2px solid var(--ora);
+  background-color: var(--whi);
+  border-radius: 15px;
+  transition: 0.2s ease-in-out;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+#myaccount
+  .flex-container
+  .bottom-container
+  .order-placeholder
+  .order-address
+  .cancel-button:hover {
+  color: var(--whi);
+  background-color: var(--ora);
+  transition: 0.2s ease-in-out;
+}
+
+#myaccount input[type="text"]::placeholder,input[type="password"]::placeholder,/* Chrome, Firefox, Opera, Safari 10.1+ */
+#myaccount input[type="text"]:-ms-input-placeholder,input[type="password"]:-ms-input-placeholder,  /* Internet Explorer 10-11 */
+    #myaccount input[type="text"]:-ms-input-placeholder,input[type="password"]:-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: var(--gr1);
+  opacity: 1; /* Firefox */
+}
+#myaccount input[type="password"]::-ms-reveal,
+#myaccount input[type="password"]::-ms-clear {
+  display: none;
+}
+
+#myaccount .container-info i {
+  color: var(--gr1);
+  float: right;
+  font-size: 1.3vw;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 7%;
+  bottom: 0;
+}
+#myaccount .container-info input:disabled:hover {
+  cursor: no-drop;
+}
+#myaccount
+  .flex-container
+  .bottom-container
+  .order-placeholder
+  .order-address
+  .cancel-button.disabled {
+  opacity: 0.5;
+}

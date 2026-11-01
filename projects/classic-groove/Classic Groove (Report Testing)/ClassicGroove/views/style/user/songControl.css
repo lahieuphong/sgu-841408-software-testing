@@ -1,0 +1,94 @@
+#song-control {
+  background-color: var(--lig);
+  display: none;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Dosis", sans-serif;
+  height: 7vh;
+  font-size: 1.5vw;
+  padding: 0 10px;
+}
+
+#song-control > * {
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+  align-items: center;
+}
+#song-control .control-btn {
+  padding: 0 15px;
+}
+
+#song-control .time-btn {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#song-control .control-btn i {
+  color: var(--gr1);
+  font-size: calc(10px + 1vw);
+  width: 35px;
+}
+#song-control .control-btn > div {
+  text-align: center;
+}
+#song-control .control-btn .volume-container {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+#song-control .control-btn .volume-container input {
+  width: 100%;
+}
+#song-control .control-btn .volume-container div {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 20px;
+  top: -120%;
+  left: -150%;
+  right: -150%;
+  transform: rotate(-90deg);
+  background-color: var(--whi);
+  display: none;
+}
+#song-control .control-btn .volume-container:hover div {
+  display: flex;
+}
+#song-control .time-btn,
+#song-control .note {
+  color: var(--whi);
+  font-size: calc(10px + 0.7vw);
+}
+#song-control .time-btn span {
+  width: 20%;
+  text-align: center;
+}
+#song-control .time-btn input {
+  width: 75%;
+  display: block;
+  margin: auto 0;
+  background: linear-gradient(
+    to right,
+    var(--ora) 0%,
+    var(--ora) 0%,
+    var(--whi) 0%,
+    var(--whi) 100%
+  );
+  border-radius: 8px;
+  height: 7px;
+  outline: none;
+  transition: background 450ms ease-in;
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+
+#song-control i:hover {
+  color: var(--whi);
+  cursor: pointer;
+}

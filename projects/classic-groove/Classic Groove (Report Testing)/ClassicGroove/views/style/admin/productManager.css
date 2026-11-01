@@ -1,0 +1,880 @@
+:root {
+  --ora: #f2623e;
+  --whi: #ffffff;
+  --bla: #000000;
+  --lig: #1d1d20;
+  --gr1: #a1a0a0;
+  --gr2: #e9e9e9;
+}
+
+#productManager {
+  font-family: "Dosis", sans-serif;
+  height: 92vh;
+  width: 95%;
+  /* min-width: 750px; */
+  /* margin: 0 auto; */
+  /* position: relative; */
+  margin-top: -2%;
+}
+
+#productManager .button-placeholder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#productManager .header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2vh;
+  align-items: center;
+  column-gap: 10px;
+}
+
+#productManager .header h2 i {
+  margin-right: 10px;
+}
+
+#productManager .new-button,
+#productManager .restock-button {
+  flex-direction: row;
+  display: flex;
+  /* width: 90px; */
+  margin: auto;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--ora);
+  border-radius: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+#productManager .new-button:active,
+#productManager .restock-button:active {
+  transform: translateY(3px);
+  transition: 0.1s;
+}
+
+.icon-placeholder {
+  margin-right: 10px;
+}
+
+#productManager .title-list {
+  /* width: 93%; */
+  height: 5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: calc(12px + 0.5vw);
+  background: var(--whi);
+  border-radius: 20px 20px 0 0;
+  color: var(--ora);
+  border-bottom: 3px solid;
+}
+
+#productManager .title-list .title-placeholder {
+  width: 97%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 0.1fr 0.15fr 0.5fr 0.2fr 0.2fr 0.15fr 0.1fr 0.1fr;
+  justify-content: center;
+  margin: auto;
+  /* font-size: calc(5px + 1vw); */
+}
+
+#productManager .title-list .title-placeholder .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+  height: 70%;
+  width: 100%;
+  margin: auto;
+}
+
+#productManager .list {
+  /* width: 93%; */
+  max-height: 87vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: calc(10px + 0.5vw);
+  background-color: var(--whi);
+  height: 84.5vh;
+  /* border-radius: 10px 30px 0 0; */
+  overflow-y: scroll;
+}
+
+#productManager .placeholder {
+  width: 98%;
+  /* height: 75px; */
+  margin: 0 1%;
+  color: var(--bla);
+  position: relative;
+  padding: 13px 0;
+  border-bottom: 2px solid var(--ora);
+}
+
+#productManager .placeholder .info {
+  display: grid;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  grid-template-rows: 1fr;
+  grid-template-columns: 0.1fr 0.15fr 0.5fr 0.2fr 0.2fr 0.15fr 0.1fr 0.1fr;
+  justify-content: center;
+}
+
+#productManager .placeholder .info .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+  border-right: var(--ora) solid 2px;
+  height: 100%;
+  width: 100%;
+  padding: 0% 5%;
+  margin: auto;
+  overflow: hidden;
+}
+
+#productManager .placeholder .info .item:last-child {
+  border: none;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  background-color: var(--whi);
+  width: 5px;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--ora);
+}
+
+#productManager .modal-placeholder {
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: opacity(50%);
+  height: 100vh;
+  width: 87vw;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+#productManager .modal-box {
+  background-color: var(--whi);
+  border-radius: 10px;
+  width: 75%;
+  min-width: 800px;
+  height: 70vh;
+  margin: 13vh auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 6fr 1fr;
+  color: var(--ora);
+  animation: loader 0.4s;
+  animation-iteration-count: 1;
+  /* box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.7); */
+}
+
+@keyframes loader {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes back {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+#productManager .modal-box .modal-header {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* font-size: calc(2px + 1vw); */
+  grid-column: 1 / span 2;
+  width: 40%;
+  margin: 0% 30%;
+  margin-bottom: 1%;
+}
+
+#productManager .modal-box .modal-left {
+  width: 100%;
+  border-right: #f2623e solid 3px;
+}
+
+#productManager .modal-box .modal-right {
+  width: 100%;
+}
+
+#productManager .modal-box .modal-right .title-list {
+  width: 100%;
+  /* height: 3vh; */
+  /* font-size: calc(3px + 1vw); */
+}
+
+#productManager
+  #edit-album
+  .modal-box
+  .modal-right
+  .title-list
+  .title-placeholder,
+#productManager
+  #new-album
+  .modal-box
+  .modal-right
+  .title-list
+  .title-placeholder {
+  width: 97%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 3fr 3fr 1fr;
+  justify-content: center;
+  margin: auto;
+}
+
+#productManager
+  #detail-album
+  .modal-box
+  .modal-right
+  .title-list
+  .title-placeholder {
+  width: 97%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 3fr 3fr;
+  justify-content: center;
+  margin: auto;
+}
+
+#productManager .modal-box .modal-right .list {
+  width: 100%;
+  max-height: 49vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* font-size: calc(3px + 1vw); */
+  background-color: var(--whi);
+  height: auto;
+  /* border-radius: 10px 30px 0 0; */
+  overflow-y: scroll;
+}
+
+#productManager .modal-box .modal-right .list .placeholder {
+  width: 98%;
+  margin: 0 1%;
+  color: var(--bla);
+  position: relative;
+  padding: 13px 0;
+  border-bottom: 3px solid var(--ora);
+}
+
+#productManager .modal-box .modal-right .list .add-button {
+  cursor: pointer;
+  height: 3.5vw;
+  padding-top: 1vw;
+  color: #f2623e;
+}
+
+#productManager #edit-album .modal-right .list .placeholder .info,
+#productManager #new-album .modal-right .list .placeholder .info {
+  display: grid;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 3fr 3fr 1fr;
+  justify-content: center;
+}
+
+#productManager #detail-album .modal-right .list .placeholder .info {
+  display: grid;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 3fr 3fr;
+  justify-content: center;
+}
+
+#productManager .modal-right .list .placeholder .info .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+  border-right: var(--gr1) solid 4px;
+  color: var(--gr1);
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+#productManager
+  #detail-album
+  .modal-right
+  .list
+  .placeholder
+  .info
+  .item:nth-of-type(4),
+#productManager
+  #edit-album
+  .modal-right
+  .list
+  .placeholder
+  .info
+  .item:nth-of-type(5),
+#productManager
+  #new-album
+  .modal-right
+  .list
+  .placeholder
+  .info
+  .item:nth-of-type(5) {
+  border: none;
+}
+
+#productManager
+  #detail-album
+  .modal-right
+  .list
+  .placeholder
+  .info
+  .item:nth-of-type(4) {
+  cursor: default;
+}
+
+#productManager .modal-box .modal-left .modal-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 3fr;
+  height: 100%;
+}
+
+#productManager .modal-box .modal-left .modal-info .modal-item:nth-of-type(2n) {
+  margin: 0;
+}
+
+#productManager
+  .modal-box
+  .modal-left
+  .modal-info
+  .modal-item:nth-of-type(2n)
+  .item-input {
+  width: 115%;
+}
+
+#productManager
+  .modal-box
+  .modal-left
+  .modal-info
+  .modal-item:last-child
+  .item-header,
+#productManager
+  .modal-box
+  .modal-left
+  .modal-info
+  .modal-item:nth-last-child(2)
+  .item-header {
+  height: 35%;
+}
+
+#productManager
+  .modal-box
+  .modal-left
+  .modal-info
+  .modal-item:last-child
+  .item-input,
+#productManager
+  .modal-box
+  .modal-left
+  .modal-info
+  .modal-item:nth-last-child(2)
+  .item-input {
+  height: 150%;
+  margin-top: -60px;
+}
+
+#productManager .modal-box .modal-info .modal-item {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr;
+  width: 80%;
+  margin: 0 10%;
+  /* font-size: calc(5px + 1vw); */
+}
+
+#productManager .modal-box .modal-info .modal-item .item-header {
+  padding: 0 5%;
+  width: 90%;
+}
+
+#productManager .modal-box .modal-info .modal-item .item-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1% 0;
+}
+
+#productManager .modal-box .modal-info .modal-item .item-input input {
+  width: 100%;
+  height: 90%;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--gr2);
+  color: var(--bla);
+  padding: 0 5%;
+  font-weight: 600;
+  font-family: "Dosis", sans-serif;
+  /* font-size: calc(4px + 1vw); */
+  cursor: pointer;
+}
+
+#productManager #detail-album input,
+#productManager #edit-album input.albumID,
+#productManager #new-album input.albumID {
+  cursor: default;
+}
+
+#productManager .modal-box .modal-info .modal-item .item-input textarea {
+  width: 100%;
+  height: 80%;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--gr2);
+  color: var(--bla);
+  padding: 4% 10%;
+  font-weight: 600;
+  font-family: "Dosis", sans-serif;
+  /* font-size: calc(4px + 1vw); */
+}
+
+#productManager
+  .modal-box
+  .modal-info
+  .modal-item
+  .item-input
+  input:nth-of-type(1) {
+  color: var(--gr1);
+}
+
+#productManager .modal-box .modal-info .modal-item .item-input input:focus {
+  outline-color: var(--ora);
+  outline-width: 2px;
+}
+
+#productManager .modal-box .modal-info .modal-item .item-input select {
+  width: 100%;
+  height: 90%;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--gr2);
+  color: var(--bla);
+  padding: 0 5%;
+  font-weight: 600;
+  font-family: "Dosis", sans-serif;
+  /* font-size: calc(4px + 1vw); */
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+}
+
+#productManager .modal-box .modal-info .modal-item .item-input select:focus {
+  outline: none;
+  /* box-shadow: 0 0 0 2px var(--ora); */
+}
+
+#productManager .modal-box .modal-button {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column: 1 / span 2;
+}
+
+#productManager .modal-box .button-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  width: 60%;
+  color: var(--whi);
+  margin-left: 35%;
+  column-gap: 20px;
+}
+
+#productManager .modal-box .edit-button,
+#productManager .modal-box .back-button,
+#productManager .modal-box .delete-button,
+#productManager .modal-box .save-button {
+  flex-direction: row;
+  display: flex;
+  /* width: 90px; */
+  margin: auto;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--ora);
+  border-radius: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+  /* font-size: calc(5px + 1vw); */
+  /* box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.7); */
+}
+
+#productManager .modal-box .edit-button:active,
+#productManager .modal-box .back-button:active,
+#productManager .modal-box .delete-button:active,
+#productManager .modal-box .save-button:active {
+  transform: translateY(3px);
+  transition: 0.1s;
+}
+
+#productManager .modal-box .back-button {
+  background-color: var(--bla);
+  color: var(--whi);
+}
+
+#productManager .modal-box .delete-button {
+  background-color: var(--ora);
+  color: var(--bla);
+}
+
+#productManager #edit-album .img-container,
+#productManager #new-album .img-container {
+  position: relative;
+}
+
+#productManager #edit-album .img-container input,
+#productManager #new-album .img-container input {
+  position: absolute;
+  width: max-content;
+  height: max-content;
+  padding: 7px;
+  font-size: medium;
+  display: none;
+  color: var(--whi);
+  border: 1px solid var(--whi);
+  cursor: pointer;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#productManager #edit-album .img-container input:nth-of-type(1),
+#productManager #new-album .img-container input:nth-of-type(1) {
+  top: 30%;
+  background-color: var(--ora);
+}
+
+#productManager #edit-album .img-container input:nth-of-type(2),
+#productManager #new-album .img-container input:nth-of-type(2) {
+  bottom: 30%;
+  background-color: rgba(206, 21, 21, 0.721);
+}
+
+#productManager #edit-album .img-container:hover input,
+#productManager #new-album .img-container:hover input {
+  animation: fadeIn 0.5s ease-in-out;
+  display: block;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+#productManager #new-album .placeholder input,
+#productManager #edit-album .placeholder input {
+  width: 90%;
+}
+
+#productManager #edit-album .placeholder .songFile-container,
+#productManager #new-album .placeholder .songFile-container {
+  position: relative;
+}
+
+#productManager #edit-album .placeholder .songFile-container input,
+#productManager #new-album .placeholder .songFile-container input {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+  color: var(--whi);
+  background-color: var(--ora);
+  border: 1px solid var(--whi);
+  cursor: pointer;
+  width: max-content;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#productManager #edit-album .placeholder .songFile-container:hover input,
+#productManager #new-album .placeholder .songFile-container:hover input {
+  animation: fadeIn 0.5s ease-in-out;
+  display: block;
+}
+
+#productManager #edit-album .btn-song,
+#productManager #new-album .btn-song {
+  display: flex;
+  justify-content: center;
+}
+
+#productManager #edit-album .btn-song input,
+#productManager #new-album .btn-song input {
+  color: var(--whi);
+  background-color: var(--ora);
+  border: 1px solid var(--whi);
+  cursor: pointer;
+  width: max-content;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--whi);
+  margin-top: 15px;
+  margin-left: 10px;
+  font-family: "Dosis", sans-serif;
+}
+
+#productManager #add_exist_song {
+  display: none;
+}
+
+#productManager #add_exist_song .modal-box {
+  display: flex;
+  align-items: center;
+  padding: 4%;
+  flex-direction: column;
+  width: fit-content;
+  height: fit-content;
+}
+
+#productManager #add_exist_song .modal-box h1 {
+  margin-bottom: 15px;
+}
+
+#productManager #suggestion-container {
+  position: relative;
+}
+
+#productManager #suggestion-container label {
+  font-size: 24px;
+}
+
+#productManager #suggestion-container input {
+  width: 100%;
+  font-size: 20px;
+  font-family: "Dosis", sans-serif;
+}
+
+#productManager #suggestion-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-top: none;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+#productManager #suggestion-list li {
+  padding: 5px;
+  cursor: pointer;
+}
+
+#productManager #suggestion-list li:hover {
+  background-color: #f2f2f2;
+}
+
+#productManager #add_exist_song .modal-box .btn-add {
+  color: var(--whi);
+  background-color: var(--ora);
+  border: 1px solid var(--whi);
+  cursor: pointer;
+  width: max-content;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--whi);
+  margin-right: 10px;
+  width: 75px;
+}
+
+#productManager #add_exist_song .modal-box .btn-cancel {
+  color: var(--whi);
+  background-color: var(--bla);
+  border: 1px solid var(--whi);
+  cursor: pointer;
+  width: max-content;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--whi);
+  width: 75px;
+}
+#productManager #add_exist_song .modal-box .btn-add input,
+#productManager #add_exist_song .modal-box .btn-cancel input {
+  font-family: "Dosis", sans-serif;
+  font-size: 15px;
+}
+
+#productManager .search-bar {
+  background-color: white;
+  display: grid;
+  justify-self: center;
+  height: 40px;
+  grid-template-columns: 5fr 2fr 2fr 2fr;
+  border-radius: 10px;
+}
+
+#productManager .search-bar .search-input,
+#productManager .search-bar .filter-input,
+#productManager .search-bar .date-begin,
+#productManager .search-bar .date-end {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#productManager .search-bar .search-input {
+  width: 90%;
+  background-color: var(--gr2);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--bla);
+  height: 70%;
+  margin: auto;
+}
+
+#productManager .search-bar .search-input i {
+  color: var(--gr1);
+}
+
+#productManager .search-bar .search-input input {
+  width: 90%;
+  background-color: var(--gr2);
+  color: var(--bla);
+  font-family: "Dosis", sans-serif;
+  outline: none;
+  border: none;
+  padding-left: 20px;
+  font-size: calc(10px + 0.1vw);
+}
+
+#productManager .search-bar .filter-input {
+  width: 90%;
+  background-color: var(--gr2);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: var(--gr1);
+  height: 70%;
+  margin: auto;
+}
+
+#productManager .search-bar .filter-input select {
+  background-color: var(--gr2);
+  color: var(--bla);
+  width: 65%;
+  font-family: "Dosis", sans-serif;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  -webkit-appearance: none;
+  font-size: calc(10px + 0.1vw);
+  -moz-appearance: none;
+  appearance: none;
+  padding-left: 10px;
+}
+
+#productManager .search-bar .date-begin,
+#productManager .search-bar .date-end {
+  width: 90%;
+  background-color: var(--gr2);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  padding-left: 5%;
+  align-items: center;
+  color: var(--gr1);
+  height: 70%;
+  margin: auto;
+}
+
+#productManager .search-bar .date-begin input,
+#productManager .search-bar .date-end input {
+  background-color: var(--gr2);
+  color: var(--bla);
+  width: 70%;
+  font-family: "Dosis", sans-serif;
+  font-size: calc(10px + 0.1vw);
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+#productManager .title-list .title:nth-of-type(3) i {
+  margin-left: 5px;
+  cursor: pointer;
+  transform: rotate(0deg);
+  transition: transform 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+  #productManager {
+    width: 615px;
+    margin-left: 25px;
+  }
+  #productManager .title-list {
+    font-size: 15px;
+    width: 615px;
+  }
+
+  #productManager .list {
+    font-size: 12px;
+    width: 615px;
+  }
+  #productManager .modal-box {
+    width: 50%;
+    min-width: 600px;
+    height: 500px;
+  }
+  #productManager .search-bar .date-begin input,
+  #productManager .search-bar .date-end input {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #productManager .header h2 {
+    display: none;
+  }
+
+  #productManager .header {
+    column-gap: 20px;
+  }
+}

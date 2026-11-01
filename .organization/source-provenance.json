@@ -1,0 +1,40 @@
+{
+  "kind": "Working-tree source snapshots; original Git histories are stored only in excluded local backups.",
+  "repositories": [
+    {
+      "path": "assignments/assignment-02-selenium/source-versions/N9_LaHieuPhong_Assignment2",
+      "head": "9f6c2ee6e24a6ea09764a0e550474abcc1214523",
+      "origin": "https://github.com/lahieuphong/N9_LaHieuPhong_Assignment2.git"
+    },
+    {
+      "path": "projects/opencart/black-box/BlackBoxTestingOpenCartDemo_LaHieuPhong",
+      "head": "d5df62b15dc93f0a6a2a048099d8fe10ae9e4748",
+      "origin": "https://github.com/lahieuphong/BlackBoxTestingOpenCartDemo_LaHieuPhong.git"
+    },
+    {
+      "path": "projects/opencart/white-box/WhiteBoxTestingOpenCartDemo_LaHieuPhong",
+      "head": "e81c48e29697c697ac7db26df44f5ef7abe5792e",
+      "origin": "https://github.com/lahieuphong/WhiteBoxTestingOpenCartDemo_LaHieuPhong.git"
+    },
+    {
+      "path": "projects/opencart/selenium-prototype/lahieuphong-selenium_opencart_automation",
+      "head": "646890f8b7b3d847277822961be5502e41dbf95f",
+      "origin": "https://github.com/lahieuphong/lahieuphong-selenium_opencart_automation.git"
+    },
+    {
+      "path": "projects/classic-groove/Classic Groove (Report Testing)/ClassicGroove",
+      "head": "20accc6758885251a5374be21260e0a78cea3329",
+      "origin": "https://github.com/lahieuphong/ClassicGroove.git"
+    },
+    {
+      "path": "projects/classic-groove/Classic Groove (Report Testing)/BlackBoxTestingClassicGroove",
+      "head": "0857c6693d73d89533d89684e8b3d7cd385c9f4b",
+      "origin": "https://github.com/lahieuphong/BlackBoxTestingClassicGroove.git"
+    },
+    {
+      "path": "projects/classic-groove/Classic Groove (Report Testing)/WhiteBoxTestingClassicGroove",
+      "head": "ad7e0367bdcbc6ae8fbf8aeb633c51b894522630",
+      "origin": "https://github.com/lahieuphong/WhiteBoxTestingClassicGroove.git"
+    }
+  ]
+}
