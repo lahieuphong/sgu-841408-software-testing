@@ -11,6 +11,7 @@ Coursework and testing projects for the Software Testing course at Saigon Univer
 | [practice/](practice/README.md) | Weekly Python/Java exercises and Selenium examples organized by website |
 | [references/](references/README.md) | Independent OpenCart examples and documents, plus reference work from other groups |
 | [tools/](tools/README.md) | One archived ChromeDriver distribution, Selenium Java 4.27.0, and shared HTML-report styling |
+| [recovery/](recovery/private-backup/README.md) | Complete encrypted backup of the original Git histories and pre-publication private files |
 
 ```text
 assignments/
@@ -48,7 +49,7 @@ Accidental source copies and superseded drafts have been removed. Python modules
 
 The [cleanup record](.organization/cleanup-manifest.json) records the consolidations and renames from the initial import. The [source provenance index](.organization/source-provenance.json) records upstream repositories and current locations. The [initial organization record](.organization/move-manifest.json) is a historical checkpoint; its paths precede this cleanup.
 
-Installed dependencies, environments, browser profiles, caches, IDE state, private configuration and OS metadata are excluded. Original nested Git metadata and local environment residues remain in excluded `.local-backups/`. Previous source copies can also be recovered from Git history.
+Installed dependencies, environments, browser profiles, caches, IDE state, private configuration and OS metadata are excluded. The original Git metadata and pre-publication private files are preserved in the [encrypted recovery archive](recovery/private-backup/README.md). Its key is delivered separately to the owner and is never committed. Local environment residues remain in excluded `.local-backups/`. Previous published source copies can also be recovered from Git history.
 
 ## Material provenance
 

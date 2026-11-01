@@ -9,3 +9,6 @@
 *.jpg binary
 *.jfif binary
 *.ico binary
+
+# Authenticated encrypted recovery chunks must remain byte-identical.
+/recovery/private-backup/payload.part-* -text -diff

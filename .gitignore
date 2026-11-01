@@ -42,3 +42,8 @@ Thumbs.db
 ~$*
 *.log
 *.tmp
+
+# Decrypted recovery output and separately retained recovery keys.
+/restored-private/
+sgu-841408-private-backup-*.tar.gz
+*.recovery-key

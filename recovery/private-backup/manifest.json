@@ -1,0 +1,25 @@
+{
+  "format": "sgu-private-archive-v1",
+  "algorithm": "AES-256-GCM",
+  "archive_id": "9b9524fd17da4ff5d040b5e13782eb22",
+  "nonce": "UDeUSw41/M8j1xMF",
+  "ciphertext_bytes": 124878456,
+  "ciphertext_sha256": "2a2fca45d639b2ff86a854e476e70d68e9ca164e71231e45356a831c1b3aa3cf",
+  "parts": [
+    {
+      "name": "payload.part-000",
+      "bytes": 41943040,
+      "sha256": "883351b8d524c7da3ec0a94e8aabbde449b6499392685b37aa579d70c386031b"
+    },
+    {
+      "name": "payload.part-001",
+      "bytes": 41943040,
+      "sha256": "e58681f9b277fd4288dfdfdf788ae598458db4ac768093347a49436377288536"
+    },
+    {
+      "name": "payload.part-002",
+      "bytes": 40992376,
+      "sha256": "77229123c07461d5b039ab99c56e3b545cd09244d8df83945ed46f0aca06a0f8"
+    }
+  ]
+}
