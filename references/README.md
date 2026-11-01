@@ -1,20 +1,16 @@
-# Tài liệu và mã nguồn tham khảo
+# Reference materials
 
-Tập hợp mã mẫu OpenCart, báo cáo Classic Groove của khóa trước và bài tham khảo từ các nhóm khác.
+| Material | Location |
+| --- | --- |
+| Independent Bug03 OpenCart Selenium example | [opencart/black-box-example/](opencart/black-box-example/README.md) |
+| Incomplete PHP unit-testing reference | [opencart/php-unit-testing/](opencart/php-unit-testing/README.md) |
+| OpenCart 4.0.2.3 documentation and database schema | [opencart/version-4.0.2.3/](opencart/version-4.0.2.3/README.md) |
+| Group 3 Classic Groove report from 2023 | [group-03-testing-report-2023.pdf](classic-groove/group-03-testing-report-2023.pdf) |
+| Halona Fruits testing report | [halona-fruits-testing-report.docx](other-groups/halona-fruits/halona-fruits-testing-report.docx) |
+| Group 6 Pyweb presentation | [pyweb-testing-presentation.pptx](other-groups/group-06-pyweb/pyweb-testing-presentation.pptx) |
+| Group 8 e-learning test cases | [assignment-02-elearning-test-cases.docx](other-groups/group-08-elearning/assignment-02-elearning-test-cases.docx) |
+| Truong Tan Dat's e-commerce Selenium report | [ecommerce-php-selenium-test-cases.docx](test-case-examples/ecommerce-php/ecommerce-php-selenium-test-cases.docx) |
 
-| Mục gốc | Vị trí trong nhóm | Nội dung |
-| --- | --- | --- |
-| `BlackBoxTesting-OpenCart-main` | [opencart/black-box/BlackBoxTesting-OpenCart-main](opencart/black-box/BlackBoxTesting-OpenCart-main) | Bộ mẫu black-box OpenCart từ Bug03 được ghi trong README |
-| `Opencart_Repo_For_PHP_Unit_Testing-main` | [opencart/php-unit-testing/Opencart_Repo_For_PHP_Unit_Testing-main](opencart/php-unit-testing/Opencart_Repo_For_PHP_Unit_Testing-main) | Bản tham khảo PHP unit testing hiện chỉ có README và metadata; giữ cả hai bản |
-| `Opencart_Repo_For_PHP_Unit_Testing-main 2` | [opencart/php-unit-testing/Opencart_Repo_For_PHP_Unit_Testing-main 2](opencart/php-unit-testing/Opencart_Repo_For_PHP_Unit_Testing-main%202) | Bản tham khảo PHP unit testing hiện chỉ có README và metadata; giữ cả hai bản |
-| `opencart-4.0.2.3` | [opencart/version-4.0.2.3/opencart-4.0.2.3](opencart/version-4.0.2.3/opencart-4.0.2.3) | Tài liệu phát hành và schema OpenCart 4.0.2.3; thư mục hiện không có upload hoặc mã ứng dụng |
-| `Kiem Thu Phan Mem.pdf` | [classic-groove/Kiem Thu Phan Mem.pdf](classic-groove/Kiem%20Thu%20Phan%20Mem.pdf) | Báo cáo tham khảo Classic Groove của nhóm 3 năm 2023, không phải giáo trình |
-| `DoAn (2).docx` | [other-groups/halona-fruits/DoAn (2).docx](other-groups/halona-fruits/DoAn%20%282%29.docx) | Báo cáo kiểm thử Halona Fruits của nhóm Trần Trọng Hiếu, Trần Gia Bảo và cộng sự |
-| `Group6_Presentation.pptx` | [other-groups/group-06-pyweb/Group6_Presentation.pptx](other-groups/group-06-pyweb/Group6_Presentation.pptx) | Slide kiểm thử Pyweb Flask và MySQL của nhóm 6 |
-| `N8_TrầnGiaBảo_Assignment2.docx` | [other-groups/group-08-elearning/N8_TrầnGiaBảo_Assignment2.docx](other-groups/group-08-elearning/N8_Tr%E1%BA%A7nGiaB%E1%BA%A3o_Assignment2.docx) | Bài Assignment 2 kiểm thử e-learning của Trần Gia Bảo nhóm 8 |
-| `Test cases.docx` | [test-case-examples/ecommerce-php/Test cases.docx](test-case-examples/ecommerce-php/Test%20cases.docx) | Mẫu test case eCommerceSite-PHP; bản có bìa ghi Trương Tấn Đạt, bản còn lại là biến thể |
-| `Test cases (1).docx` | [test-case-examples/ecommerce-php/Test cases (1).docx](test-case-examples/ecommerce-php/Test%20cases%20%281%29.docx) | Mẫu test case eCommerceSite-PHP; bản có bìa ghi Trương Tấn Đạt, bản còn lại là biến thể |
+These works describe different subjects or authors and remain separate. The superseded e-commerce draft and identical PHP-reference README copy have been removed. The OpenCart release folder contains documentation and schema files, not a complete application installation.
 
-`Kiem Thu Phan Mem.pdf` là báo cáo kiểm thử Classic Groove của nhóm 3 năm 2023. Hai thư mục PHP unit testing hiện chỉ có README và metadata. Bản `opencart-4.0.2.3/` hiện gồm tài liệu và schema, không có thư mục mã ứng dụng `upload/`.
-
-[Về mục lục môn học](../README.md)
+[Course overview](../README.md)

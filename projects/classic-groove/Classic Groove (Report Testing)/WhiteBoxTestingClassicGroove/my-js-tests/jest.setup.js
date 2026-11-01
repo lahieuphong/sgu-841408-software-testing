@@ -1,4 +1,0 @@
-global.$ = {
-    ajax: jest.fn()
-  };
-  

@@ -1,19 +1,20 @@
-# Bài thực hành
+# Testing practice
 
-Thực hành được chia thành bài theo tuần và bài Selenium theo website hoặc chủ đề.
+| Topic | Location |
+| --- | --- |
+| Python electricity calculation | [weekly/week-03/electricity/](weekly/week-03/electricity/) |
+| Registration validation | [weekly/week-03/registration/](weekly/week-03/registration/) |
+| Shopping cart and unit tests | [weekly/week-03/shopping-cart/](weekly/week-03/shopping-cart/) |
+| Java, Maven and JUnit | [weekly/week-04/junit/](weekly/week-04/junit/) |
+| Browser basics | [selenium/learning/browser-basics/](selenium/learning/browser-basics/) |
+| SGU login scenarios | [selenium/learning/sgu-login/](selenium/learning/sgu-login/) |
+| Example login test | [selenium/learning/login-example/](selenium/learning/login-example/) |
+| VnExpress extraction and Flask example | [selenium/learning/vnexpress/](selenium/learning/vnexpress/) |
+| SauceDemo scenarios | [selenium/saucedemo/scenarios/](selenium/saucedemo/scenarios/) |
+| SauceDemo login/logout helpers | [selenium/saucedemo/login-logout/](selenium/saucedemo/login-logout/) |
+| Tree Shop search/cart/subtotal scenarios | [selenium/tree-shop/](selenium/tree-shop/) |
+| Tic Tac Toe and minimax | [selenium/tic-tac-toe/](selenium/tic-tac-toe/) |
 
-| Mục gốc | Vị trí trong nhóm | Nội dung |
-| --- | --- | --- |
-| `tuần 3` | [weekly/week-03](weekly/week-03) | Python và unit test cho Electricity, Login, Shopping |
-| `tuần 4` | [weekly/week-04](weekly/week-04) | Java, Maven và JUnit cho BankAccount, MathUtils, MathQuizGame |
-| `tuần 6` | [weekly/week-06](weekly/week-06) | Hiện chỉ có metadata Finder, chưa có bài làm |
-| `HỌC PYTHON SELENIUM` | [selenium/learning/HỌC PYTHON SELENIUM](selenium/learning/H%E1%BB%8CC%20PYTHON%20SELENIUM) | Bài học Selenium: mở trình duyệt, SGU/Google login, YouTube, VnExpress |
-| `selenium` | [selenium/saucedemo/selenium](selenium/saucedemo/selenium) | Thực hành Selenium trên SauceDemo: login, cart, checkout, session |
-| `Testcase` | [selenium/saucedemo/Testcase](selenium/saucedemo/Testcase) | Thực hành login/logout tách helper trên SauceDemo |
-| `selenium 2` | [selenium/tree-shop/selenium 2](selenium/tree-shop/selenium%202) | Thực hành Tree Shop: tìm kiếm, chọn sản phẩm và tính subtotal |
-| `test_treeshop.py` | [selenium/tree-shop/test_treeshop.py](selenium/tree-shop/test_treeshop.py) | Bộ test Tree Shop tổng hợp |
-| `playtictactoe` | [selenium/tic-tac-toe/playtictactoe](selenium/tic-tac-toe/playtictactoe) | Kiểm thử trò chơi tic-tac-toe và thuật toán minimax |
+The empty week-06 placeholder has been removed. The ShoppingCart tests import the implementation instead of containing a second copy. The archived driver distribution is stored once under [tools](../tools/README.md); the examples normally use Selenium Manager or WebDriver Manager.
 
-Tuần 3 gồm Python Electricity, Login và Shopping. Tuần 4 gồm Java/Maven/JUnit. `weekly/week-06/` hiện chỉ chứa metadata Finder, chưa có bài làm. Các thư mục môi trường và trình duyệt vẫn đi cùng project gốc.
-
-[Về mục lục môn học](../README.md)
+[Course overview](../README.md)

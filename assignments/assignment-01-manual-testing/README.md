@@ -1,11 +1,14 @@
-# Assignment 1 kiểm thử thủ công
+# Assignment 1 manual testing
 
-Bài kiểm thử thủ công OpenCart của La Hiểu Phong và tài liệu cùng nhóm N9.
+Manual OpenCart test design and bug reporting by La Hieu Phong, with separate workbooks from N9 teammate Nguyen Long Vu.
 
-| Thư mục | Nội dung |
+| Material | Location |
 | --- | --- |
-| [reports/](reports/) | `N9_LaHieuPhong_Assignment1.docx` và PDF tương ứng |
-| [drafts/](drafts/) | `Document1.docx`: bản tiếng Việt thiết kế test case và báo lỗi OpenCart của Phong |
-| [team-members/](team-members/) | Hai bảng Excel test execution và bug report của Nguyễn Long Vũ |
+| Editable final report | [assignment-01-manual-testing-report.docx](reports/assignment-01-manual-testing-report.docx) |
+| Submitted report | [assignment-01-manual-testing-report.pdf](reports/assignment-01-manual-testing-report.pdf) |
+| Bug list | [opencart-bug-report.xlsx](team-members/nguyen-long-vu/opencart-bug-report.xlsx) |
+| Test execution workbook | [opencart-test-execution-results.xlsx](team-members/nguyen-long-vu/opencart-test-execution-results.xlsx) |
 
-[Về nhóm bài tập](../README.md)
+The final report covers 15 test scenarios and seven bugs. Its superseded Vietnamese draft was removed after comparing that coverage. The two spreadsheets serve different reporting purposes.
+
+[Assignments](../README.md)

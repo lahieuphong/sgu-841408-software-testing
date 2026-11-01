@@ -1,12 +1,16 @@
-# Assignment 2 kiểm thử tự động
+# Assignment 2 automated testing
 
-Báo cáo và mã kiểm thử OpenCart bằng Python, Selenium và Pytest của La Hiểu Phong.
+OpenCart automation by La Hieu Phong using Python, Selenium, Pytest and requests.
 
-| Thư mục | Nội dung |
+| Material | Location |
 | --- | --- |
-| [reports/](reports/) | Báo cáo PDF và `co_Hanh_ne.docx`, bản Word báo cáo Assignment 2 của Phong |
-| [source-versions/](source-versions/) | Ba phiên bản `N9`, `N9_LaHieuPhong_Assignment2` và `N9_LaHieuPhong_Assignment2-main` |
+| Editable final report | [assignment-02-selenium-report.docx](reports/assignment-02-selenium-report.docx) |
+| Submitted report | [assignment-02-selenium-report.pdf](reports/assignment-02-selenium-report.pdf) |
+| Combined test source | [source/](source/README.md) |
+| 13 November 2024 run | [automation-2024-11-13.html](reports/automation-2024-11-13.html) |
+| 26 November 2024 run | [automation-2024-11-26.html](reports/automation-2024-11-26.html) |
+| 27 November 2024 run | [automation-2024-11-27.html](reports/automation-2024-11-27.html) |
 
-Các phiên bản có khác biệt trong các test điều hướng, xác thực dữ liệu và responsive. Bản `-main` còn có `white_box_login.py`. Tên thư mục không xác định bản mới nhất hay bản chạy đúng nhất; giữ riêng để đối chiếu khi cần.
+The three former source trees are combined into one suite. The Canon EOS 5D product-options checkout case and expanded guest-checkout cases remain. Historical reports preserve different executions; their old test filenames describe the original runs.
 
-[Về nhóm bài tập](../README.md)
+[Assignments](../README.md)

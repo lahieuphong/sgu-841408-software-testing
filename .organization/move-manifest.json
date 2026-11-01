@@ -199,5 +199,7 @@
     "new_readmes": 10,
     "errors": []
   },
-  "verification_checkpoint": "Organization completed before publication preparation; this checkpoint is historical."
+  "verification_checkpoint": "Organization completed before publication preparation; this checkpoint is historical.",
+  "record_type": "Historical organization checkpoint before duplicate consolidation and renaming.",
+  "current_layout_record": "cleanup-manifest.json"
 }
