@@ -49,7 +49,7 @@ Accidental source copies and superseded drafts have been removed. Python modules
 
 The [cleanup record](.organization/cleanup-manifest.json) records the consolidations and renames from the initial import. The [source provenance index](.organization/source-provenance.json) records upstream repositories and current locations. The [initial organization record](.organization/move-manifest.json) is a historical checkpoint; its paths precede this cleanup.
 
-Installed dependencies, environments, browser profiles, caches, IDE state, private configuration and OS metadata are excluded. The original Git metadata and pre-publication private files are preserved in the [encrypted recovery archive](recovery/private-backup/README.md). Its key is delivered separately to the owner and is never committed. Local environment residues remain in excluded `.local-backups/`. Previous published source copies can also be recovered from Git history.
+Installed dependencies, environments, browser profiles, caches, IDE state, private configuration and OS metadata are excluded. The original Git metadata and pre-publication private files are preserved in the [encrypted recovery archive](recovery/private-backup/README.md). At the owner's request, its recovery key is included in the repository; anyone with repository access can restore the complete archive, including original saved passwords and account data. Local environment residues remain in excluded `.local-backups/`. Previous published source copies can also be recovered from Git history.
 
 ## Material provenance
 

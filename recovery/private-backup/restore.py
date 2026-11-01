@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Restore the encrypted original-history archive using a separately retained key."""
+"""Restore the encrypted original-history archive using a recovery key."""
 import argparse
 import base64
 import getpass
@@ -131,7 +131,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--manifest", type=Path, default=Path(__file__).with_name("manifest.json"))
     parser.add_argument("--output", type=Path, help="New output file; existing files are never overwritten.")
-    parser.add_argument("--key-file", type=Path, help="Optional local file containing the key; keep it outside Git.")
+    parser.add_argument("--key-file", type=Path, help="File containing the Base64 recovery key; prompts if omitted.")
     args = parser.parse_args()
     try:
         value = args.key_file.read_text(encoding="ascii").strip() if args.key_file else getpass.getpass("Recovery key (hidden): ")
